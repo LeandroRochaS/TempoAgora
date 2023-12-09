@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/icons/3322072.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>TempoAgora</title>
+  </head>
+  <body>
+    <main class="dsc-container">
+      <div>
+        <form class="dsc-search-bar">
+          <button onclick="Search()" type="button">🔎</button>
+          <input
+            autocomplete="off"
+            type="text"
+            id="cidade"
+            class="btn-white"
+            placeholder="Nome da Cidade"
+          />
+          <button type="reset">🗙</button>
+        </form>
+      </div>
+
+      <div class="dsc-card">
+        <div class="dsc-card-infos">
+          <div class="dsc-city-content">
+            <div></div>
+            <div class="dsc-city-infos">
+              <img src="./images/icons/pin.png" />
+              <div class="dsc-city-uf">
+                <p class="dsc-infos cidade">Aracaju,</p>
+                <p class="estado">BR</p>
+              </div>
+            </div>
+          </div>
+          <div class="dsc-info-temperatura">
+            <h3 class="dsc-infos temperatura">35</h3>
+            <p>°C</p>
+          </div>
+          <div class="dsc-infos-cards">
+            <div class="dsc-info-umidade">
+              <div class="dsc-info-umidade-icon">
+                <img src="./images/icons/weather (1).svg" />
+              </div>
+              <div class="dsc-info-umidade-text">
+                <p class="dsc-infos">
+                  Umidade <br />
+                  <b class="umidade">75</b> %
+                </p>
+              </div>
+            </div>
+            <div class="dsc-info-umidade">
+              <strong class="dsc-infos ensolarado">Ensolarado</strong>
+              <img
+                class="img"
+                src="https://openweathermap.org/img/wn/04n.png"
+              />
+            </div>
+          </div>
+          <div class="dsc-info-image">
+            <img class="dsc-card-img" src="./images/terra.png" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+    <footer></footer>
+  </body>
+</html>
